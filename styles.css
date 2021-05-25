@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+}
+header img{
+    margin: 40px auto;
+}
+main section:first-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+main section:first-child div{
+    flex-grow: 1;
+}
+main section:first-child img{
+    width: clamp(120px,50%,380px);
+    height: clamp(120px,50%,380px);
+    display: inline;
+}
+main section:first-child img:first-child{
+    margin-left:auto;
+}
+main section:first-child img:nth-child(2){
+    margin-right:auto;
+}
+main,footer{
+    text-align: center;
+}
+main section:nth-child(3) picture {
+display: grid;
+grid-template-columns: repeat(2,117px);
+gap: 15px;
+justify-content: center;
+margin-top: 50px;
+}
+main section:nth-child(3) picture img{
+height: 120px;
+width: 120px;
+border-radius: 10px;
+}
+footer{
+    background: url(./assets/mobile/image-footer-750w.jpg) no-repeat  #4d96a9;
+    background-size: cover;
+    height: 530px;
+    background-position-x: -60px;
+    background-blend-mode:soft-light;
+    color: white;
+    display: grid;
+    align-items: end;
+}
+
+
+main section:first-child div h1,main section:nth-child(3) div h1{
+    font-size: 2em;
+    font-weight:bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+}
+main section:first-child div p,main section:nth-child(3) div p{
+    color: gray;
+    line-height: 1.4;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+span::after{
+    content: "";
+    display: block;
+}
+main section:first-child div div button:first-child{
+    background:#4d96a9;
+    border-radius: 30px;
+    height: 60px;
+    width: 150px;
+    border:solid white 1px;
+    color:white;
+    font-weight: bold;
+}
+main section:first-child div div button:first-child span{
+    opacity: 0.8;
+}
+
+main section:first-child div div button:nth-child(3){
+    background:#855fb1;
+    border-radius: 30px;
+    margin-top: 20px;
+    height: 60px;
+    width: 110px;
+        border:solid white 1px;
+        color:white;
+        font-weight: bold;
+
+}
+.cercle-one,.cercle-two{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin:auto;
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    border:solid gray 1px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cercle-two{
+    background:white;
+    transform: translateY(50px);
+}
+.vertical-line{
+    background: gray;
+    height: 120px;
+    width: 1px;
+    position: relative;
+    top:-82px;
+    left:-10px;
+    opacity: 0.5;
+}
+main section:nth-child(3) div h3{
+    color: #4d96a9;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 0.3em;
+    margin-top: 50px;
+}
+footer button{
+    background:#855fb1;
+    border-radius: 30px;
+    height: 60px;
+    width: 130px;
+        border:solid #855fb1 1px;
+        color:white;
+        font-weight: bold;
+        align-self: center;
+        justify-self: center;
+
+}
+footer p{
+    font-size: 20px;
+}
+footer  h1{
+    font-size: 40px;
+}
+@media (min-width:1100px) {
+    main section:first-child{
+        display: flex;
+        gap: 60px;
+        
+    }
+    main section:first-child img{
+    
+    }
+    main section:first-child img:first-child{
+        order: 1;
+        
+    }
+    main section:first-child img:nth-child(2){
+        order: 3;
+        
+        
+    }
+    main section:first-child div{
+        order: 2;
+        
+    }
+    main section:first-child div div{
+        display: flex;
+        gap:20px;
+        justify-content: center;
+        
+    }
+    main section:first-child div div button:nth-child(3){
+        margin:0px;
+    }
+    main section:nth-child(3) picture {
+display: flex;
+flex-wrap: wrap;
+}
+footer{
+    background: url(./assets/desktop/image-footer-1440w.jpg) no-repeat #4d96a9;
+    background-size: cover;
+    background-position-x: -550px;
+}
+main section:nth-child(3) picture{
+    display: flex;
+    justify-content:center;
+    
+}
+main section:nth-child(3) picture img{
+width: 300px;
+height: 300px;
+    
+}
+main section:nth-child(3) div h3{
+    font-size: 40px;
+}
+main section:nth-child(3) div h1{
+    font-size: 40px;
+}
+
+}
