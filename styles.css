@@ -150,8 +150,11 @@ footer  h1{
         gap: 60px;
         
     }
-    main section:first-child img{
-    
+    main section:first-child img:first-child{
+    margin-left: 80px;
+    }
+    main section:first-child img:nth-child(2){
+    margin-right: 80px;
     }
     main section:first-child img:first-child{
         order: 1;
